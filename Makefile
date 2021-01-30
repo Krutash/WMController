@@ -6,7 +6,7 @@ TBOUTPUT = Microcontroller_tb.vcd
 #TOOLS
 COMPILER = iverilog
 SIMULATOR = vvp
-VIEWER = Scansion
+VIEWER = Gtkwave
 
 #TOOL OPTIONS
 COFLAGS = -v -o
