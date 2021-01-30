@@ -60,7 +60,7 @@ This project needs [Icarus-Verilog](http://iverilog.icarus.com) and a VCD viewer
 ## Building on macOS
 1. Icarus-Verilog can be installed via Homebrew :
    <code>$ brew install icarus-verilog</code>
-2. Download [Scansion](http://www.logicpoet.com/scansion/) from here.  
+2. Works for gtkwave now.  
 3. Clone the repository.
 4. <code>$ make simulate</code> - compiles design+TB & simulates the verilog design.
 5. <code>$ make display</code> - displays waveforms.
