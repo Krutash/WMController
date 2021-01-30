@@ -6,7 +6,7 @@ TBOUTPUT = Microcontroller_tb.vcd
 #TOOLS
 COMPILER = iverilog
 SIMULATOR = vvp
-VIEWER = Gtkwave
+VIEWER = gtkwave
 
 #TOOL OPTIONS
 COFLAGS = -v -o
@@ -20,7 +20,7 @@ simulate: $(COUTPUT)
 	$(SIMULATOR) $(SFLAGS) $(COUTPUT) 
 
 display: $(TBOUTPUT)
-	open -a $(VIEWER) $(TBOUTPUT) 
+	$(VIEWER) $(TBOUTPUT) 
 
 $(COUTPUT): $(SRC)
 	$(COMPILER) $(COFLAGS) $(COUTPUT) $(TESTBENCH) $(SRC)
